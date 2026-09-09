@@ -1,6 +1,6 @@
-# SLS — Shamase Logistics Solutions 🚛
+# SLS — Shamase Logistics Solutions 
 
-![SLS Logo](src/assets/images/sls-logo.png)
+
 
 ## Moving Goods. Building Connections.
 
@@ -10,14 +10,14 @@ This project is the official web presence being developed for SLS, with the webs
 
 ---
 
-## 🌍 About SLS
+ About SLS
 
 Shamase Logistics Solutions is a growing transport business currently operating with a small fleet while working toward expanding its transportation capabilities.
 
 The current fleet includes:
 
-- 🚛 FAW 8D Tipper Truck
-- 🚚 FAW 8-Ton Truck
+- FAW 8D Tipper Truck
+- FAW 8-Ton Truck
 
 SLS is focused on developing long-term relationships with businesses and pursuing recurring and contract-based transportation opportunities.
 
@@ -25,7 +25,7 @@ The website therefore focuses not only on individual transport enquiries, but al
 
 ---
 
-## 🎯 Project Vision
+## Project Vision
 
 The goal of this project is to create a professional digital presence for SLS that communicates:
 
@@ -42,7 +42,7 @@ The website is designed with future expansion in mind so that additional vehicle
 
 ---
 
-## 🚛 Transport Solutions
+## Transport Solutions
 
 The website currently presents the following core transport solutions:
 
@@ -64,7 +64,7 @@ Long-term transport arrangements designed around the operational requirements of
 
 ---
 
-## 🏭 Industries
+## Industries
 
 The website presents SLS as a business-focused transportation provider serving industries such as:
 
@@ -78,7 +78,7 @@ The website architecture allows additional industries to be introduced as the bu
 
 ---
 
-## 💻 Technology Stack
+## Technology Stack
 
 This project is built using modern web technologies:
 
@@ -93,9 +93,9 @@ Additional technologies and services may be introduced as the project evolves.
 
 ---
 
-## ✨ Website Features
+##  Website Features
 
-### 🏠 Professional Homepage
+###  Professional Homepage
 
 The homepage introduces SLS through a modern logistics-focused design with:
 
@@ -110,7 +110,7 @@ The homepage introduces SLS through a modern logistics-focused design with:
 
 ---
 
-### 🚛 Fleet Showcase
+###  Fleet Showcase
 
 The website provides a dedicated section for presenting the SLS fleet.
 
@@ -123,19 +123,19 @@ The fleet structure is designed to support the addition of future vehicles.
 
 ---
 
-### 📦 Transport Solutions
+### Transport Solutions
 
 Visitors can explore the different transportation services offered by SLS and identify the solution that best matches their requirements.
 
 ---
 
-### 🤝 Contract Transport
+###  Contract Transport
 
 A dedicated call-to-action encourages businesses requiring recurring transportation capacity to contact SLS regarding potential long-term transport arrangements.
 
 ---
 
-### 💬 WhatsApp Enquiries
+###  WhatsApp Enquiries
 
 The website integrates WhatsApp as a primary communication channel.
 
@@ -150,7 +150,7 @@ The WhatsApp number is centrally configurable so that business contact informati
 
 ---
 
-### 📱 Responsive Design
+###  Responsive Design
 
 The website is designed to work across:
 
@@ -164,7 +164,7 @@ The mobile experience is particularly important because customers can contact SL
 
 ---
 
-## 🧱 Project Architecture
+## Project Architecture
 
 The application follows a component-based Angular architecture.
 
