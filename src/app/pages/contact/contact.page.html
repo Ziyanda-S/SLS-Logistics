@@ -1,0 +1,27 @@
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Contact</div>
+    <h1>Get in Touch with SLS</h1>
+    <p>Tell us about your transport requirements — request a quote or reach out directly.</p>
+  </div>
+</section>
+
+<section class="section contact-details">
+  <div class="detail-card">
+    <ion-icon name="call-outline"></ion-icon>
+    <h3>Phone</h3>
+    <p>{{ business.phone }}</p>
+  </div>
+  <div class="detail-card">
+    <ion-icon name="mail-outline"></ion-icon>
+    <h3>Email</h3>
+    <p>{{ business.email }}</p>
+  </div>
+  <div class="detail-card">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    <h3>WhatsApp</h3>
+    <a [href]="whatsappUrl" target="_blank">Chat with SLS</a>
+  </div>
+</section>
+
+<app-quote-form></app-quote-form>

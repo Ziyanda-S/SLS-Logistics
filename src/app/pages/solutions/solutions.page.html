@@ -1,0 +1,29 @@
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Solutions</div>
+    <h1>Our Transport Solutions</h1>
+    <p>Professional road transport solutions built around the needs of your business.</p>
+  </div>
+</section>
+
+<section class="section solutions-list">
+  <div class="solution-block" *ngFor="let s of services" [id]="s.slug">
+    <div class="solution-visual">
+      <ion-icon [name]="s.icon"></ion-icon>
+    </div>
+    <div class="solution-info">
+      <h2>{{ s.title }}</h2>
+      <p>{{ s.fullDescription }}</p>
+
+      <h4>Suitable For</h4>
+      <ul>
+        <li *ngFor="let item of s.suitableFor">{{ item }}</li>
+      </ul>
+
+      <div class="solution-actions">
+        <ion-button class="btn-primary" routerLink="/contact">{{ s.ctaLabel }}</ion-button>
+        <ion-button class="btn-outline-dark" fill="outline" [href]="whatsappUrl" target="_blank">Enquire on WhatsApp</ion-button>
+      </div>
+    </div>
+  </div>
+</section>

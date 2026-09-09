@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="navbar-toolbar">
+    <div class="navbar-inner">
+      <a routerLink="/" class="logo" (click)="closeMenu()">
+        <img src="assets/logo/logo.jpeg" alt="SLS logo" class="logo-img" width="140" height="52" onerror="this.style.display='none'" />
+        <span class="logo-text">
+          <span class="logo-short">{{ business.shortName }}</span>
+          <span class="logo-full">{{ business.companyName }}</span>
+        </span>
+      </a>
+
+      <nav class="nav-links desktop-only">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a routerLink="/solutions" routerLinkActive="active">Solutions</a>
+        <a routerLink="/industries" routerLinkActive="active">Industries</a>
+        <a routerLink="/fleet" routerLinkActive="active">Fleet</a>
+        <a routerLink="/about" routerLinkActive="active">About SLS</a>
+        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+      </nav>
+
+      <ion-button class="desktop-only btn-primary" routerLink="/contact">
+        Request a Quote
+      </ion-button>
+
+      <div class="mobile-actions mobile-only">
+        <a class="mobile-quote-pill" routerLink="/contact">Quote</a>
+        <button class="menu-toggle" (click)="toggleMenu()" aria-label="Menu">
+          <span class="bar" [class.rotate1]="menuOpen"></span>
+          <span class="bar" [class.hide]="menuOpen"></span>
+          <span class="bar" [class.rotate2]="menuOpen"></span>
+        </button>
+      </div>
+    </div>
+  </ion-toolbar>
+
+  <div class="mobile-menu" [class.open]="menuOpen">
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/solutions" (click)="closeMenu()">Solutions</a>
+    <a routerLink="/industries" (click)="closeMenu()">Industries</a>
+    <a routerLink="/fleet" (click)="closeMenu()">Fleet</a>
+    <a routerLink="/about" (click)="closeMenu()">About SLS</a>
+    <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+    <ion-button class="btn-primary" routerLink="/contact" (click)="closeMenu()">Request a Quote</ion-button>
+  </div>
+</ion-header>

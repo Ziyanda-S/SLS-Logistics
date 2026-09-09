@@ -1,0 +1,45 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.fleet-showcase-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.showcase-image {
+  height: 340px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--sls-blue-dark), var(--sls-navy));
+  overflow: hidden;
+}
+
+.showcase-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-text h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin: 0 0 14px;
+}
+
+.showcase-text p {
+  color: var(--sls-text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 860px) {
+  .fleet-showcase-section {
+    grid-template-columns: 1fr;
+  }
+  .showcase-image {
+    order: -1;
+    height: 240px;
+  }
+}

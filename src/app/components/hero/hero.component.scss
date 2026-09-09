@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(120deg, rgba(7,21,33,0.88) 0%, rgba(13,43,62,0.75) 55%, rgba(13,43,62,0.55) 100%),
+    url('/assets/hero/hero-truck.jpg') center center / cover no-repeat;
+  background-color: var(--sls-navy);
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 80% 20%, rgba(245, 166, 35, 0.08), transparent 45%),
+    repeating-linear-gradient(120deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 60px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 62px);
+  line-height: 1.08;
+  margin: 0 0 20px;
+}
+
+.hero-sub {
+  max-width: 560px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.hero-services {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .hero { min-height: 78vh; }
+  .hero-actions ion-button { width: 100%; }
+}

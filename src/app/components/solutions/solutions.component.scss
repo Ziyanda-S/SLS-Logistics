@@ -1,0 +1,67 @@
+.solutions-section h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin: 0 0 16px;
+  max-width: 640px;
+}
+
+.section-intro {
+  color: var(--sls-text-muted);
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.solution-card {
+  background: var(--sls-grey-light);
+  border-radius: 10px;
+  padding: 28px 22px;
+  border-top: 3px solid var(--sls-accent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(7, 21, 33, 0.08);
+}
+
+.solution-card ion-icon {
+  font-size: 30px;
+  color: var(--sls-blue-dark);
+  margin-bottom: 14px;
+}
+
+.solution-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.solution-card p {
+  font-size: 14px;
+  color: var(--sls-text-muted);
+  line-height: 1.55;
+  min-height: 66px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--sls-accent-dark);
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .solutions-grid { grid-template-columns: 1fr; }
+}

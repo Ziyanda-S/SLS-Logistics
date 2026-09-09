@@ -1,0 +1,26 @@
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-label">Fleet</div>
+    <h1>Our Fleet</h1>
+    <p>SLS is building a growing transport fleet focused on providing dependable road transportation solutions to businesses.</p>
+  </div>
+</section>
+
+<section class="section fleet-page-grid">
+  <div class="fleet-page-card" *ngFor="let v of vehicles">
+    <div class="fleet-page-image">
+      <img [src]="v.imagePath" [alt]="v.name" onerror="this.style.display='none'" />
+    </div>
+    <div class="fleet-page-body">
+      <span class="fleet-category">{{ v.category }}</span>
+      <h2>{{ v.name }}</h2>
+      <p>{{ v.description }}</p>
+      <ion-button class="btn-primary" [href]="whatsappUrl" target="_blank">Enquire About This Vehicle</ion-button>
+    </div>
+  </div>
+
+  <div class="fleet-growth-note">
+    <strong>Our fleet is growing.</strong>
+    <p>SLS is building toward a larger and more capable fleet to meet the evolving transportation requirements of our customers.</p>
+  </div>
+</section>

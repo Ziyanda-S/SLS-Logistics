@@ -1,0 +1,10 @@
+<section class="section why-section">
+  <h2>Why SLS?</h2>
+  <div class="why-grid">
+    <div class="why-card" *ngFor="let p of points">
+      <ion-icon [name]="p.icon"></ion-icon>
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.text }}</p>
+    </div>
+  </div>
+</section>

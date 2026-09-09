@@ -1,0 +1,23 @@
+<div class="whatsapp-widget">
+  <div class="whatsapp-panel" [class.open]="panelOpen">
+    <div class="panel-header">
+      <div>
+        <strong>Need transport?</strong>
+        <p>Hello! How can SLS help you?</p>
+      </div>
+      <ion-button fill="clear" (click)="togglePanel()" class="close-btn">
+        <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="panel-options">
+      <button class="panel-option" *ngFor="let opt of options" (click)="openWhatsapp(opt.message)">
+        {{ opt.label }}
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </div>
+  </div>
+
+  <button class="fab-button" (click)="togglePanel()" aria-label="Chat on WhatsApp">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+  </button>
+</div>

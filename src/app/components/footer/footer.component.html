@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col brand-col">
+      <div class="footer-logo">{{ business.shortName }}</div>
+      <div class="footer-company-name">{{ business.companyName }}</div>
+      <p class="footer-desc">Professional road transport solutions for businesses.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a routerLink="/">Home</a>
+      <a routerLink="/solutions">Solutions</a>
+      <a routerLink="/industries">Industries</a>
+      <a routerLink="/fleet">Fleet</a>
+      <a routerLink="/about">About</a>
+      <a routerLink="/contact">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a routerLink="/solutions">General Freight</a>
+      <a routerLink="/solutions">Tipper Transport</a>
+      <a routerLink="/solutions">Dedicated Transport</a>
+      <a routerLink="/solutions">Contract Transport</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <span>{{ business.phone }}</span>
+      <span>{{ business.email }}</span>
+      <a routerLink="/contact">WhatsApp SLS</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; {{ year }} {{ business.companyName }}. All rights reserved.
+  </div>
+</footer>

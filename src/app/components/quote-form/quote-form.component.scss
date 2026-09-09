@@ -1,0 +1,75 @@
+.quote-heading h2 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin: 0 0 10px;
+}
+
+.quote-heading p {
+  color: var(--sls-text-muted);
+  margin-bottom: 32px;
+}
+
+.quote-form {
+  background: var(--sls-grey-light);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.full-width {
+  margin-top: 18px;
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--sls-navy);
+}
+
+.form-field ion-input,
+.form-field ion-select,
+.form-field ion-textarea {
+  --background: #fff;
+  --padding-start: 12px;
+  --padding-end: 12px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  border: 1px solid #dfe4e8;
+  border-radius: 6px;
+  font-size: 14.5px;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.btn-outline-dark {
+  --border-color: var(--sls-blue-dark);
+  --color: var(--sls-blue-dark);
+  --border-radius: 6px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .quote-form { padding: 22px; }
+}

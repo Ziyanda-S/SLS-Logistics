@@ -1,0 +1,12 @@
+<ion-app>
+  <app-splash-screen *ngIf="showSplash" (finished)="onSplashFinished()"></app-splash-screen>
+
+  <app-navbar></app-navbar>
+
+  <main class="page-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <app-footer></app-footer>
+  <app-whatsapp-widget></app-whatsapp-widget>
+</ion-app>

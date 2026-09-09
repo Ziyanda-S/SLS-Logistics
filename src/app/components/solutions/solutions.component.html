@@ -1,0 +1,21 @@
+<section class="section solutions-section">
+  <ng-container *ngIf="showHeading">
+    <div class="section-label">Our Transport Solutions</div>
+    <h2>Transport Solutions Built Around Your Business</h2>
+    <p class="section-intro">
+      SLS provides dependable road transportation solutions for businesses requiring the safe and efficient
+      movement of goods and materials. From general freight and bulk materials to recurring transport
+      requirements, our focus is on professional service, reliable communication and building long-term
+      customer relationships.
+    </p>
+  </ng-container>
+
+  <div class="solutions-grid">
+    <div class="solution-card" *ngFor="let s of services">
+      <ion-icon [name]="s.icon"></ion-icon>
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.shortDescription }}</p>
+      <a [routerLink]="['/solutions']" [fragment]="s.slug" class="card-link">{{ s.ctaLabel }} &rarr;</a>
+    </div>
+  </div>
+</section>

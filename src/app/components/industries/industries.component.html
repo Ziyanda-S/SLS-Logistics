@@ -1,0 +1,12 @@
+<section class="section industries-section">
+  <div class="section-label">Industries We Serve</div>
+  <h2>Industries We Serve</h2>
+
+  <div class="industries-grid">
+    <div class="industry-card" *ngFor="let i of items">
+      <ion-icon [name]="i.icon"></ion-icon>
+      <h3>{{ i.title }}</h3>
+      <p>{{ i.description }}</p>
+    </div>
+  </div>
+</section>

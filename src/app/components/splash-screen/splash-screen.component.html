@@ -1,0 +1,26 @@
+<div class="splash" [class.leaving]="isLeaving">
+  <div class="splash-background">
+    <img
+      *ngIf="!logoFailed"
+      src="assets/logo/logo.jpeg"
+      alt="{{ business.shortName }} logo"
+      class="splash-logo-full"
+      (error)="onLogoError()"
+    />
+    <div class="splash-wordmark-full" *ngIf="logoFailed">
+      {{ business.shortName }}
+    </div>
+  </div>
+  
+  <div class="splash-overlay">
+    <div class="splash-content">
+      <p class="splash-tagline">{{ business.tagline }}</p>
+      
+      <div class="splash-dots" aria-hidden="true">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</div>
