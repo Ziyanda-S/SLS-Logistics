@@ -1,7 +1,6 @@
-```yaml
 name: Deploy SLS Logistics to GitHub Pages
 
-on:
+"on":
   push:
     branches:
       - main
@@ -50,4 +49,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-```
