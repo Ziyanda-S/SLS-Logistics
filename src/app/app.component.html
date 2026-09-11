@@ -1,6 +1,6 @@
-<ion-app>
-  <app-splash-screen *ngIf="showSplash" (finished)="onSplashFinished()"></app-splash-screen>
+<app-splash-screen *ngIf="showSplash" (finished)="onSplashFinished()"></app-splash-screen>
 
+<ion-app>
   <app-navbar></app-navbar>
 
   <main class="page-content">
@@ -8,5 +8,6 @@
   </main>
 
   <app-footer></app-footer>
-  <app-whatsapp-widget></app-whatsapp-widget>
 </ion-app>
+
+<app-whatsapp-widget></app-whatsapp-widget>
